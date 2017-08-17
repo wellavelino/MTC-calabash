@@ -160,11 +160,11 @@ class AndroidScreenBase < Calabash::ABase
   end
 
   def enter(text, element, query = nil)
-    if query.nil?
-      query("* marked:'#{element}'", setText: text.to_s)
-    else
-      query(query, setText: text.to_s)
-    end
+    touch("* id:'#{element}'")
+
+    enter_text("* id:'#{element}'", text)
+
+    hide_soft_keyboard
   end
 
   def touch_screen_element(element, query = nil)

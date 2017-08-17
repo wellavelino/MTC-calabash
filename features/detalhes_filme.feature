@@ -9,5 +9,5 @@ Funcionalidade: Detalhes Filme
   Cenário: Favoritar um filme pelo atalho na tela de detalhes
     Dado que efetuei uma busca por um filme
     E entrar nos detalhes do filme
-    Quando favoritar o filme
+    Quando favoritar o filme detalhado
     Então devo visualizar o filme na lista de favoritos
