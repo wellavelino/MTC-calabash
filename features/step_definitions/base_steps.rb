@@ -9,6 +9,7 @@ end
 
 Quando(/^favoritar o filme detalhado$/) do
   @page = page(DetalhesFilmeScreen).await(timeout: 3)
+  sleep(0.8)
   @page.touch_favorite
 end
 

@@ -21,5 +21,5 @@ end
 ######### ENTãO #########
 
 Então(/^devo visualizar o resultado da busca$/) do
-  fail 'Movies not fount' unless @page.movies_searched?
+  fail 'Movies not found' unless @page.movies_searched?
 end

@@ -13,5 +13,6 @@ end
 ######### ENTãO #########
 
 Então(/^devo visualizar o filme adicionado com sucesso na lista de favoritos$/) do
+  sleep(0.5)
   fail 'Movie not favorited' unless @page.movie_favorited?
 end
