@@ -27,7 +27,7 @@ class BuscaScreen < AndroidScreenBase
   def movies_searched?
     sleep(1)
     movies = query("* id:'#{movie}'")
-    movies.count > 1
+    movies.count >= 1
   end
 
   def select_movie
@@ -45,5 +45,11 @@ class BuscaScreen < AndroidScreenBase
 
     movies = query("* id:'#{movie}'")
     movies.count >= 1
+  end
+
+  def full_search
+    enter_title 'Batman'
+    enter_year '2000'
+    touch_search_button
   end
 end

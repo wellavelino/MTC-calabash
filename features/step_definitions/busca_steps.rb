@@ -18,6 +18,10 @@ Quando(/^inserir o ano para a buscar$/) do
   @page.enter_year rand(0..2000)
 end
 
+Quando(/^realizar a busca por título e ano$/) do
+  @page.full_search
+end
+
 ######### ENTãO #########
 
 Então(/^devo visualizar o resultado da busca$/) do
